@@ -1,0 +1,824 @@
+@font-face {
+    font-family: edo;
+    src: url("./font/edosz.ttf");
+}
+
+@font-face {
+    font-family: inter;
+    src: url("./font/Inter-Regular.ttf");
+}
+
+
+.nolopienses1{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    width: 100%;
+    height: 100px;
+    color:#DDC3A5;
+    font-family: edo;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 200px;
+    
+}
+.nolopienses1 span{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.pareja{
+    position: absolute;
+    width: 500px;
+    bottom: -9%;
+    opacity: 0.1;
+    left: 24%;
+}   
+
+
+
+body {
+    
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: inter;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    
+    z-index: -2;
+    position: relative;
+    
+    background-size: cover; /* La imagen se ajustará para cubrir todo el fondo sin repetirse */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    /* Opcional, puede hacer que la imagen de fondo permanezca fija */
+}
+body::before {
+    content: "";
+    background-image: url("./images/saltacabras.jpg");
+    opacity: 0.5; /* Cambia la opacidad a tu preferencia, 0.0 es completamente transparente y 1.0 es completamente opaco */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional, puede hacer que la imagen de fondo permanezca fija */
+}
+
+
+
+
+.title-section {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: center;
+
+}
+
+.title-section img{
+    margin-top: 100px;
+    width: 30vw;
+}
+
+.undertitle{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: inter;
+    color: #efefef;
+    font-size: 30px;
+    width: 100vw;
+    padding: 20px;
+    padding-left: 0px;
+    margin-top: 440px;
+}
+
+.undertitletext{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.socials{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    padding-right: 40px;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.socialicons{
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.socialicons:hover{
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+    filter: contrast(2);
+}
+
+
+
+.subtitle{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+   
+}
+
+.title-section img {
+
+    max-width: 90vw;
+}
+
+.lamuertedejuan {
+    
+    opacity: 1 ;
+    color: #d9356c;
+    width: 100vw;
+    z-index: 0;
+    margin-bottom: 80px;
+    font-size: 80px;
+    text-decoration: none;
+    font-family: edo;
+    text-align: center;
+    
+}
+
+.lamuertedejuan:hover{
+    filter: saturate(3);
+    transition: 1s;
+}
+
+.botonplay{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+
+
+.botonplay img{
+    display: flex;
+    align-items: flex-start;
+    color: #d9356c;
+    width: 50px;
+}
+.clickparaver {
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d9356c;
+    text-align: center;
+    
+    
+}
+
+
+
+
+.lamuertedejuan:hover {
+    transition: 0.5s;
+    color: #d9356c;
+}
+
+.lamuertedejuan:active {
+    opacity: 1;
+}
+
+.horizontal-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+   
+}
+
+
+
+.milibro{
+    position: absolute;
+    top:-320px;
+    left:33%;
+    width: 400px;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+.foto2-dual{
+    position: relative;
+}
+
+
+
+.foto2-dual img {
+    margin-bottom: 120px;
+    
+    max-width: 500px;
+    padding-top: 140px;
+    height: auto;
+    
+    
+
+}
+.horizontal-section2 {
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    padding: 20px;
+    width: 100vw;
+    position:relative;
+    overflow:hidden;
+    
+    color: white;
+    font-family: edo;
+    color: #DDC3A5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.horizontal-section2 h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.titulomismovidas {
+    margin-top: 100px;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+.textmismovidas {
+    color: white;
+    max-width: 600px;
+    min-width: 350px;
+    max-height: 350px;
+    overflow: hidden;
+    
+    text-wrap: wrap;
+    word-break: normal;
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 1px;
+}
+
+.izq-section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.botonmismovidas a{
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #DDC3A5;
+}
+
+.botonvolvermain a{
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    
+    bottom: 0px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: #DDC3A5;
+}
+.botonvolvermain:hover a{
+    filter: contrast(2);
+}
+
+.botonmismovidas:hover a{
+    filter: contrast(2);
+
+}
+
+.textomovidas{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    color: #DDC3A5;
+    font-family: edo;
+    font-size: 24px;
+    margin-top: 200px;
+    
+}
+
+
+
+
+
+.horizontal-section3 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 100vw;
+    color: white;
+    font-family: edo;
+    color: #4d6c84;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.totoro{
+    position: absolute;
+    opacity: 0.3;
+    width: 500px;
+    top: -990px
+}
+
+
+
+.horizontal-section3 h1{
+    text-align: center;
+}
+.horizontal-section4 {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+  
+    width: 100vw;
+    padding: 20px;
+    color: white;
+    font-family: edo;
+    color: #DDC3A5;
+    display: flex;
+    flex-direction: row;
+    
+
+
+}
+
+.horizontal-section4 img {
+    height: 600px;
+    padding: 20px;
+    position: relative;
+
+}
+
+.muerte1div{
+    margin-top: 100px;
+}
+.muerte2div{
+    margin-top: 100px;
+}
+
+
+.textomuerte {
+    max-width: 800px;
+    margin-top: 100px;
+    padding-right: 20px;
+    margin-left: 40px;
+    justify-self: flex-end;
+    text-wrap: wrap;
+    word-break: normal;
+    
+    
+}
+
+.horizontal-section5{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.65);
+    
+    backdrop-filter: blur(10px);
+    height: auto;
+
+}
+.horizontal-section5movil{
+   background-color: rgba(255, 255, 255, 0.65);
+   backdrop-filter: blur(10px);
+   height: auto;
+    display: none;
+
+}
+
+.horizontal-section5movil img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.horizontal-section5 img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.reaper{
+    position: absolute;
+    left:50%;
+    bottom:1550px;
+    opacity: 0.3;
+        
+}
+.textomuerte h1{
+    margin-top: 8px;
+}
+
+
+.textomuerte h2 {
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 21px;
+    line-height: 1.5;
+    margin-top: 40px;
+
+}
+
+.sintripa {
+    font-size: 120px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+
+.anuncio {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    align-self: flex-start;
+    margin-bottom: 100px;
+    padding-left: 20%;
+
+}
+.izq-formulario{
+    width: 1000px;
+    height: 674px;
+    background-image: url("./images/juanbicicleta.png");
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+
+
+
+
+.form-section {
+    width: 600px;
+    
+    position:relative;
+    margin-top: 100px;
+    padding-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.form-section h1 {
+
+    padding: 30px 0px 30px 0px;
+    font-size: 80px;
+    font-family: edo;
+
+}
+
+.form-section form {
+    width: 95%;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+
+.form-section input[type="submit"] {
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    border: none;
+    font-size: 26;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #DDC3A5;
+}
+
+.form-section input[type="submit"]{
+    background-color: rgba(221, 195, 165, 1);
+    color: black;
+}
+
+.precio {
+
+    font-family: edo;
+    color: #DDC3A5;
+    text-align: end;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.mensaje {
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    border:none;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #DDC3A5;
+
+}
+
+.boton-formulario {
+    margin-top: 80px;
+    background-color: #DDC3A5;
+}
+
+.boton-formulario:hover {
+    filter: contrast(2);
+}
+
+.boton-formulario:active {
+    opacity: 1;
+}
+
+
+
+.footer {
+   
+    width: 100vw;
+    background: #000000;
+    color: #E0A96D;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 900px) {
+
+    .milibro{
+        left: -7%;
+        top:45%
+    }
+
+    .totoro{
+        top:-120%;
+        left: -10%;
+    }
+
+    .reaper{
+        left: 20%;
+        bottom: 16.5%;
+    }
+    
+    .title-section {
+        
+        width: 90vw;
+        
+    }
+
+    .title-section img{
+        width: 90vw;
+    }
+
+
+    .lamuertedejuan {
+        font-size: 40px;
+    }
+
+    .undertitle{
+        font-family: inter;
+        color: white;
+        font-size: 20px;
+        width: 100vw;
+        padding: 20px;
+        
+        margin-top: 280px;
+    }
+
+    .undertitletext{
+        padding: 0px;
+    }
+    
+
+    .horizontal-section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        
+        
+    }
+
+
+    .form-section{
+        margin-top: -90px;
+        max-width: 95vw;;
+    }
+    .horizontal-section2 {
+        
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .horizontal-section2 h4{
+        margin-bottom: 20px;
+       
+    }
+
+    .titulomismovidas {
+        position: relative;
+        text-align: center;
+        
+    }
+    
+    .textmismovidas {
+        color: white;
+        width: 90vw;    
+        max-height: 550px;
+        
+    }
+    .foto2-dual img {       
+        width: 90vw;  
+    }
+
+    .botonmismovidas a{
+        position: relative;
+        text-decoration: none;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        background-color: #DDC3A5;
+        
+    }
+
+    .botonmismovidas:hover{
+        opacity: 0.5;
+    }
+
+    .textomovidas{
+        padding-left: 10px;
+        width: 100vw;
+        color: #DDC3A5;
+        font: edo;
+        margin: 200px;
+        
+    }
+    
+    
+   
+    
+    .horizontal-section3 {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+    .horizontal-section3 h1{
+        
+        width: 90vw;
+        font-size: 80px;
+    }
+
+    .horizontal-section3 h3{
+        
+        width: 90vw;
+        margin-left: -50px;
+    }
+
+    .horizontal-section4 {
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .horizontal-section4 img {
+        
+        width: 90vw;
+        height: auto;
+    }
+    
+
+    .muerte2div{
+        display:none;
+    }
+
+    .nolopienses1{
+        
+        width: 100vw;
+  
+        font-size: 45px;
+        
+    }
+
+    .horizontal-section5 img{
+        
+        transform: scale(0.6);
+    }
+   
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    body::before {
+        
+        background-image: url("./images/saltacabrasmovil.jpg");
+      
+    } 
+
+    .horizontal-section5 img{
+        display: none;
+        
+    }
+
+    .horizontal-section5movil{
+        
+        display: block;
+        transform: scale(1);
+    
+    }
+}
+
+    
+
+
+    
+    
