@@ -631,13 +631,14 @@ body::before {
     }
 
     .totoro{
-        top:-120%;
+        top:-110%;
         left: -10%;
+        transform: scale(0.7);
     }
 
     .reaper{
         left: 20%;
-        bottom: 16.5%;
+        bottom: 27.5%;
     }
     
     .title-section {
@@ -828,9 +829,9 @@ body::before {
         opacity: 1;
     }
 
-    /* .pareja{
+    .pareja{
         display: none;
-    } */
+    } 
 
     .foto2-dual{
         height: 591px;
