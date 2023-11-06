@@ -235,14 +235,16 @@ body::before {
     width: 100vw;
     display: flex;
     flex-direction: row;
-   
+    flex-wrap: wrap;
     align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(10px);
    
 }
 
-
+#textocontacto{
+    text-align: center;
+}
 
 .milibro{
     position: absolute;
@@ -552,7 +554,8 @@ body::before {
 
 }
 .izq-formulario{
-    width: 1000px;
+    width: 50%;
+    
     margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 50px;
@@ -571,6 +574,7 @@ body::before {
     position:relative;
     margin-top: 100px;
     padding-right: 20px;
+    margin-right: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     display: flex;
