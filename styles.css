@@ -858,7 +858,7 @@ body::before {
     .horizontal-section5movil{
         
         display: block;
-        transform: scale(1);
+        width: 100vw;
     
     }
 }
