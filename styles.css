@@ -242,9 +242,7 @@ body::before {
    
 }
 
-#textocontacto{
-    text-align: center;
-}
+
 
 .milibro{
     position: absolute;
@@ -894,13 +892,17 @@ body::before {
 @media screen and (max-width: 420px) {
 
     .izq-formulario{
-        max-width: 360px;
-        height: 300px;
+        width: 360px;
+        height: 240px;
         background-image: url("./images/dualbicimovil.png");
         margin-top: 50px;
         margin-bottom: 100px;
-        margin-left: 48px;
+        margin-left: 0px;
         
+    }
+
+    .form-section{
+        margin-left: -30px;
     }
 
     .botonmismovidas {
