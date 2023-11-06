@@ -639,7 +639,7 @@ body::before {
 
     .reaper{
         left: 20%;
-        bottom: 27.5%;
+        bottom: 26%;
     }
     
     .title-section {
@@ -777,8 +777,12 @@ body::before {
     .horizontal-section4 {
         flex-direction: column;
         align-items: center;
+        flex-wrap: nowrap;
         
-        
+    }
+
+    .textomuerte{
+        width: 90vw;
     }
 
     .horizontal-section4 img {
