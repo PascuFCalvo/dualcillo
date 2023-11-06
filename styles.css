@@ -312,7 +312,7 @@ body::before {
     word-break: normal;
     font-size: 21px;
     line-height: 1.5;
-    margin-bottom: 1px;
+    margin-bottom: 100px;
 }
 
 .izq-section2{
@@ -324,7 +324,7 @@ body::before {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0px;
     text-decoration: none;
     color: black;
@@ -721,7 +721,7 @@ body::before {
         border-radius: 16px;
         display: flex;
         flex-direction: column;
-        position: absolute;
+        
         color: black;
         text-align: center;
         justify-content: center;
@@ -730,6 +730,12 @@ body::before {
         background-color: #DDC3A5;
         
     }
+
+    .botonmismovidas{
+        margin-top: 20px;
+    }
+
+   
 
     .botonmismovidas:hover{
         opacity: 0.5;
@@ -801,14 +807,37 @@ body::before {
 @media screen and (max-width: 400px) {
 
     .izq-formulario{
-        width: 360px;
+        max-width: 360px;
         height: 300px;
         background-image: url("./images/dualbicimovil.png");
         margin-top: 50px;
         margin-bottom: 100px;
+        margin-left: 48px;
         
     }
-    
+
+    .botonmismovidas {
+        z-index: 5;
+        margin-bottom: -50px;
+        
+    }
+    .botonmismovidas:hover{
+        filter: saturate(2);
+        opacity: 1;
+    }
+
+    /* .pareja{
+        display: none;
+    } */
+
+    .foto2-dual{
+        height: 591px;
+    }
+
+    .botonmismovidas:hover a{
+        filter: contrast(3);
+    }
+   
 
 
     
