@@ -678,6 +678,8 @@ body::before {
         
     }
 
+  
+
 
     .form-section{
         margin-top: -90px;
@@ -797,6 +799,10 @@ body::before {
 }
 
 @media screen and (max-width: 400px) {
+
+    .izq-formulario{
+        background-image: url("./images/dualbicimovil.png");
+    }
     
     body::before {
         
