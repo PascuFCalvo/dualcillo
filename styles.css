@@ -696,7 +696,24 @@ body::before {
     filter: contrast(3);
 }
 
+.blanco{
+    color: white;
+}
+
 @media screen and (max-width: 900px) {
+
+    .textoJuan {
+        width: 90vw;
+        padding: 0px;
+        
+    }
+    .textolegales {
+        width: 90vw;
+        padding: 0px;
+        
+    }
+
+    
 
     .izq-formulario{
         width: 90vw;
@@ -714,7 +731,7 @@ body::before {
     }
 
     .reaper{
-        left: 20%;
+        left: 8%;
         bottom: 26%;
     }
     
@@ -890,6 +907,23 @@ body::before {
 }
 
 @media screen and (max-width: 420px) {
+
+    .textoJuan{
+        width: 100vw;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .textolegales{
+        width: 100vw;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .textomovidas{
+        width: 100vw;
+        padding: 20px;
+        font-size: 20px;
+    }
 
     .izq-formulario{
         width: 360px;
